@@ -1,0 +1,70 @@
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "module": "esnext",
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "allowJs": true,
+    "checkJs": false,
+    "jsx": "react",
+    "sourceMap": true,
+    "outDir": "./build",
+    "importHelpers": true,
+    "downlevelIteration": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "moduleResolution": "node",
+    "baseUrl": "./src",
+    "paths": {
+      "Components/*": [
+        "components/*"
+      ],
+      "Assets/*": [
+        "assets/*"
+      ],
+      "Types/*": [
+        "types/*"
+      ],
+      "Context/*": [
+        "context/*"
+      ]
+    },
+    "types": [
+      "jest",
+      "node"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "sourceRoot": "/src",
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true
+  },
+  "exclude": [
+    "build",
+    "scripts",
+    "config",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "node_modules",
+    "obj"
+  ],
+  "include": [
+    "src",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/**/*.tsx",
+    "src/**/**/*.jsx",
+    "@types/**/*.d.ts",
+    "node_modules/axios",
+    "node_modules/redux-thunk"
+  ]
+}
